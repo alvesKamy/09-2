@@ -1,0 +1,14 @@
+C:\Users\491504624\Documents\09-02-atividades\bin\Debug\net8.0\09-02-atividades.exe
+C:\Users\491504624\Documents\09-02-atividades\bin\Debug\net8.0\09-02-atividades.deps.json
+C:\Users\491504624\Documents\09-02-atividades\bin\Debug\net8.0\09-02-atividades.runtimeconfig.json
+C:\Users\491504624\Documents\09-02-atividades\bin\Debug\net8.0\09-02-atividades.dll
+C:\Users\491504624\Documents\09-02-atividades\bin\Debug\net8.0\09-02-atividades.pdb
+C:\Users\491504624\Documents\09-02-atividades\obj\Debug\net8.0\09-02-atividades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\491504624\Documents\09-02-atividades\obj\Debug\net8.0\09-02-atividades.AssemblyInfoInputs.cache
+C:\Users\491504624\Documents\09-02-atividades\obj\Debug\net8.0\09-02-atividades.AssemblyInfo.cs
+C:\Users\491504624\Documents\09-02-atividades\obj\Debug\net8.0\09-02-atividades.csproj.CoreCompileInputs.cache
+C:\Users\491504624\Documents\09-02-atividades\obj\Debug\net8.0\09-02-atividades.dll
+C:\Users\491504624\Documents\09-02-atividades\obj\Debug\net8.0\refint\09-02-atividades.dll
+C:\Users\491504624\Documents\09-02-atividades\obj\Debug\net8.0\09-02-atividades.pdb
+C:\Users\491504624\Documents\09-02-atividades\obj\Debug\net8.0\09-02-atividades.genruntimeconfig.cache
+C:\Users\491504624\Documents\09-02-atividades\obj\Debug\net8.0\ref\09-02-atividades.dll
