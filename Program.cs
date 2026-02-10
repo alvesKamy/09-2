@@ -262,45 +262,204 @@
 
 //Leia um código de produto e informe a categoria (ex: 1–Alimento, 2–Bebida, 3–Limpeza).
 
-Console.WriteLine("Informe o código do produto:");
-Console.WriteLine("1 - Alimento");
-Console.WriteLine("2 - Bebida");
-Console.WriteLine("3 - Limpeza");
+// Console.WriteLine("Informe o código do produto:");
+// Console.WriteLine("1 - Alimento");
+// Console.WriteLine("2 - Bebida");
+// Console.WriteLine("3 - Limpeza");
 
-int opcao = int.Parse(Console.ReadLine());
-Console.WriteLine("digite o nome do produto.");
-string produto = Console.ReadLine();   
+// int opcao = int.Parse(Console.ReadLine());
+// Console.WriteLine("digite o nome do produto.");
+// string produto = Console.ReadLine();   
 
-switch (opcao)
+// switch (opcao)
+// {
+//     case 1:
+//     Console.WriteLine(" o produto " + produto + " pertence aos alimentos ");
+//     break;
+
+//     case 2:
+//     Console.WriteLine(" o produto " + produto + " pertence as bebidas ");
+//     break;
+
+//     case 3:
+//     Console.WriteLine(" o produto " + produto + " pertence a limpeza ");
+//     break;
+// }
+
+
+// Leia 10 números e informe:
+// a soma
+// a média
+// o maior número
+
+// Console.WriteLine("Digite o 1º número");
+// int numero = int.Parse(Console.ReadLine());
+// int soma = numero;
+// int maior = numero;
+
+// for (int i = 2; i <=10; i++)
+// {
+//     Console.WriteLine("Digite o " + i + "º número");
+//     numero = int.Parse(Console.ReadLine());
+//     soma+= numero;
+//     if(numero > maior)
+//     {
+//         maior = numero;
+//     }
+// }
+// double media = soma/10;
+// Console.WriteLine("A soma é: " + soma);
+// Console.WriteLine("A média é: " + media);
+// Console.WriteLine("O maior número é: " + maior);
+
+//Leia idades até que seja digitado um valor negativo e informe a média das idades.
+
+// int soma = 0;
+// int contador = 0;
+
+// Console.WriteLine("Digite as idades para calcular a média, numéro negativo pra sair.");
+// int idade = int.Parse(Console.ReadLine());
+
+// while (idade >= 0)
+// {
+//     soma += idade;
+//     contador++;
+
+//     Console.WriteLine("Digite as idades para calcular a média, numéro negativo pra sair.");
+//     idade = int.Parse(Console.ReadLine());
+// }
+// if (contador > 0)
+// {
+//     double media = soma / contador;
+//     Console.WriteLine("Média das idades: " + media);
+// }
+
+//Leia vários números e informe quantos são pares e quantos são ímpares.
+
+// int par = 0;
+// int impar = 0;
+
+// Console.WriteLine("Digite um número, 0 para sair");
+// int numero = int.Parse(Console.ReadLine());
+
+// while (numero != 0)
+// {
+//     if (numero % 2 == 0)
+//     {
+//         par++;
+//     }
+//     else
+//     {
+//         impar++;
+//     }
+//     Console.WriteLine("Digite um número, 0 para sair");
+//     numero = int.Parse(Console.ReadLine());
+// }
+// Console.WriteLine("Quantidade de números pares: " + par);
+// Console.WriteLine("Quantidade de números ímpares: " + impar);
+
+//Leia um número e informe se ele é primo.
+
+// int divisores = 0;
+
+// Console.WriteLine("Digite um número para verificar se é primo.");
+// int numero = int.Parse(Console.ReadLine());
+
+// for (int i = 1; i <= numero; i++)
+// {
+//     if (numero % i == 0)
+//     {
+//         divisores++;
+//     }
+// }
+// if (divisores == 2)
+// {
+//     Console.WriteLine("É primo.");
+// } else
+// {
+//     Console.WriteLine("Não é primo.");
+// }
+
+//Leia um número e calcule o fatorial.
+
+// Console.WriteLine("Digite um número para calcular o fatorial.");
+// int numero = int.Parse(Console.ReadLine());
+
+// int fatorial = 1;
+
+// for ( int i = 1; i <= numero; i++)
+// {
+//     fatorial *= i;
+// }
+
+// Console.WriteLine("O fatorial é: " + fatorial);
+
+//Leia uma senha e permita no máximo 3 tentativas.
+
+// int tentativas = 0;
+
+// Console.WriteLine("Digite a senha:");
+// string senha = Console.ReadLine();
+// while (senha != "senha")
+// {
+//     tentativas++;
+//     Console.WriteLine("Erro, tente novamente.");
+//     senha = Console.ReadLine();
+//     if (tentativas == 2)
+//     {
+//         break;
+//     }
+// }
+// if(senha == "senha"){
+//     Console.WriteLine("Logado.");
+// }
+// else
+// {
+//     Console.WriteLine("Número máximo de tentativas atingido.");
+// }
+
+//Simule um caixa eletrônico que permite saques enquanto houver saldo.
+
+double saldo = 100;
+Console.WriteLine("Saldo: " + saldo);
+while (saldo > 0)
 {
-    case 1:
-    Console.WriteLine(" o produto " + produto + " pertence aos alimentos ");
-    break;
+    Console.WriteLine("Quanto deseja sacar?");
+    double saque = double.Parse(Console.ReadLine());
 
-    case 2:
-    Console.WriteLine(" o produto " + produto + " pertence as bebidas ");
-    break;
-
-    case 3:
-    Console.WriteLine(" o produto " + produto + " pertence a limpeza ");
-    break;
-
+    if (saque <= 0)
+    {
+        Console.WriteLine("Valor Inválido");
+    }
+    else if(saque > saldo)
+    {
+        Console.WriteLine("Valor insuficiente");
+    }
+    else
+    {
+        saldo -= saque;
+        Console.WriteLine("Saque realizado. Saldo restante: " + saldo);
+    }
 }
+Console.WriteLine("Operação finalizada.");
 
+//Leia uma sequência de números e informe qual foi o maior valor digitado.
 
+// Console.WriteLine("Digite o 1º número");
+//  int numero = int.Parse(Console.ReadLine());
+//  int maior = numero;
 
-
-
-
-
-
-
-
-
-
-
-
-
+// for (int i = 2; i <=10; i++)
+// {
+//     Console.WriteLine("Digite o " + i + "º número");
+//     numero = int.Parse(Console.ReadLine());
+//     if(numero > maior)
+//     {
+//         maior = numero;
+//    }
+// }
+// Console.WriteLine("O maior número é: " + maior);
+  
 
 
 
